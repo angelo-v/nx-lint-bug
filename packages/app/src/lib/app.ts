@@ -1,3 +1,2 @@
-export function app(): string {
-  return 'app';
-}
+
+export const unused = 42

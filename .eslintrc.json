@@ -38,9 +38,15 @@
         "*.tsx"
       ],
       "extends": [
-        "plugin:@nx/typescript"
+        "plugin:@nx/typescript",
+        "plugin:import/recommended",
+        "plugin:import/typescript"
       ],
-      "rules": {}
+      "rules": {
+        "import/no-unresolved": "error",
+        "import/no-duplicates": "error",
+        "import/no-empty-named-blocks": "error"
+      }
     },
     {
       "files": [
@@ -52,5 +58,16 @@
       ],
       "rules": {}
     }
-  ]
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "packages/*/tsconfig.json"
+      }
+    }
+  }
 }

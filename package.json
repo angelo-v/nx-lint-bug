@@ -16,12 +16,13 @@
     "@typescript-eslint/parser": "^7.16.0",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
     "nx": "20.0.5",
     "tslib": "^2.3.0",
     "typescript": "~5.5.2"
   },
   "workspaces": [
     "packages/*"
-  ],
-  "dependencies": {}
+  ]
 }

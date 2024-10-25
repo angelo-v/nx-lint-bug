@@ -1,0 +1,8 @@
+{
+  "name": "app",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
