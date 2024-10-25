@@ -10,5 +10,8 @@
   "private": true,
   "nx": {
     "name": "app"
+  },
+  "scripts": {
+    "lint": "eslint"
   }
 }
