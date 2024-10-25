@@ -1,3 +1,3 @@
-import {} from "./lib/app";
-import { unused} from "./lib/app";
-import * as foo from "unresolved";
+import {run} from "./lib/app";
+
+run()
